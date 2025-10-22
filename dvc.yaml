@@ -1,0 +1,39 @@
+stages:
+  preprocess:
+    cmd: python preprocess.py
+    deps:
+      - preprocess.py
+    outs:
+      - data/raw_data.csv
+      - data/train.csv
+      - data/test.csv
+
+  train:
+    cmd: python train.py
+    deps:
+      - train.py
+      - data/train.csv
+    outs:
+      - models/model.pkl
+
+  tune:
+    cmd: python tune.py
+    deps:
+      - tune.py
+      - data/train.csv
+      - data/test.csv
+    outs:
+      - models/
+
+  validate:
+    cmd: python validate.py
+    deps:
+      - validate.py
+      - models/model.pkl
+      - data/test.csv
+    metrics:
+      - metrics.json:
+          cache: false
+    plots:
+      - confusion_matrix.png:
+          cache: false
