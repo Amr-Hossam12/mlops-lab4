@@ -23,17 +23,4 @@ stages:
       - data/train.csv
       - data/test.csv
     outs:
-      - models/
-
-  validate:
-    cmd: python validate.py
-    deps:
-      - validate.py
-      - models/model.pkl
-      - data/test.csv
-    metrics:
-      - metrics.json:
-          cache: false
-    plots:
-      - confusion_matrix.png:
-          cache: false
+      - models/best_svc.pkl
