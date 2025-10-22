@@ -1,0 +1,58 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python preprocess.py
+    deps:
+    - path: preprocess.py
+      hash: md5
+      md5: 60b6ab524763ffd4d0e84d5d7ac3fd9d
+      size: 1781
+    outs:
+    - path: data/raw_data.csv
+      hash: md5
+      md5: f7dcfd8fd39d9bc225052385dccec007
+      size: 453888
+    - path: data/test.csv
+      hash: md5
+      md5: 707339fd80a8bd1b834d7002dcaf081c
+      size: 184363
+    - path: data/train.csv
+      hash: md5
+      md5: 86f47f754c82ddc61cee517551210e7e
+      size: 736566
+  train:
+    cmd: python train.py
+    deps:
+    - path: data/train.csv
+      hash: md5
+      md5: 86f47f754c82ddc61cee517551210e7e
+      size: 736566
+    - path: train.py
+      hash: md5
+      md5: 9a1f7426754190164df88325e7193e8b
+      size: 986
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: ed7d70635fc065b0c4a9365a578ad86c
+      size: 579563
+  tune:
+    cmd: python tune.py
+    deps:
+    - path: data/test.csv
+      hash: md5
+      md5: 707339fd80a8bd1b834d7002dcaf081c
+      size: 184363
+    - path: data/train.csv
+      hash: md5
+      md5: 86f47f754c82ddc61cee517551210e7e
+      size: 736566
+    - path: tune.py
+      hash: md5
+      md5: 88c68b637b78db901793a9612ce75dc8
+      size: 1965
+    outs:
+    - path: models/best_svc.pkl
+      hash: md5
+      md5: 02e6b3253125ef725615524ee6b2a3d5
+      size: 579915

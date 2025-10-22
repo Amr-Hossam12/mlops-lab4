@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/GitHub%20Repos/mlops-lab4/mlruns/129161977438549999/96475613c833448eb06a13872690084c/artifacts
+end_time: 1761153494012
+entry_point_name: ''
+experiment_id: '129161977438549999'
+lifecycle_stage: active
+run_id: 96475613c833448eb06a13872690084c
+run_name: SVC_tuning
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761153472994
+status: 3
+tags: []
+user_id: Amr

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/GitHub%20Repos/mlops-lab4/mlruns/129161977438549999/6c0a74438dae421aa008f8e2474c162f/artifacts
+end_time: 1761153491630
+entry_point_name: ''
+experiment_id: '129161977438549999'
+lifecycle_stage: active
+run_id: 6c0a74438dae421aa008f8e2474c162f
+run_name: rbf_C1.0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761153489158
+status: 3
+tags: []
+user_id: Amr

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/GitHub%20Repos/mlops-lab4/mlruns/129161977438549999/0c7dc78f9425425cb020fa41b4c1aace/artifacts
+end_time: 1761153481486
+entry_point_name: ''
+experiment_id: '129161977438549999'
+lifecycle_stage: active
+run_id: 0c7dc78f9425425cb020fa41b4c1aace
+run_name: poly_C1.0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761153477065
+status: 3
+tags: []
+user_id: Amr

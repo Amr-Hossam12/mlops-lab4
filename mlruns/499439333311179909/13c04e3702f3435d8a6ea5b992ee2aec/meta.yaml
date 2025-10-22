@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/GitHub%20Repos/mlops-lab4/mlruns/499439333311179909/13c04e3702f3435d8a6ea5b992ee2aec/artifacts
+end_time: 1761153467725
+entry_point_name: ''
+experiment_id: '499439333311179909'
+lifecycle_stage: active
+run_id: 13c04e3702f3435d8a6ea5b992ee2aec
+run_name: SVC_poly_baseline
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761153467526
+status: 3
+tags: []
+user_id: Amr
