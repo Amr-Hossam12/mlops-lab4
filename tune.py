@@ -2,8 +2,11 @@ import os
 import joblib
 import pandas as pd
 import mlflow
+from dotenv import load_dotenv
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
+
+load_dotenv()
 
 # Load train/test data
 train_df = pd.read_csv('data/train.csv')
